@@ -23,4 +23,3 @@ function webshim_init() {
 	
 	elgg_extend_view('page/elements/head', 'webshim/head');
 }
-	
