@@ -9,7 +9,7 @@
 */
 
 // register default Elgg events
-elgg_register_event_handler("init", "system", "webshim_init");
+elgg_register_event_handler('init', 'system', 'webshim_init');
 
 /**
  * initialization of plugin
@@ -18,9 +18,9 @@ elgg_register_event_handler("init", "system", "webshim_init");
  */
 function webshim_init() {
 	// register libraries
-	elgg_register_js("webshim", "mod/webshim/vendors/webshim-1.15.5/js-webshim/minified/polyfiller.js");	
-	elgg_load_js("webshim");
+	elgg_register_js('webshim', 'mod/webshim/vendors/webshim-1.15.5/js-webshim/minified/polyfiller.js');
+	elgg_load_js('webshim');
 	
-	elgg_extend_view("page/elements/head", "webshim/head");
+	elgg_extend_view('page/elements/head', 'webshim/head');
 }
 	
